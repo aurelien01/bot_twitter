@@ -1,7 +1,7 @@
 require 'twitter'
 require 'dotenv'
 
-Dotenv.load
+Dotenv.load "../.env"
 
 def login_twitter
   client = Twitter::REST::Client.new do |config|
@@ -15,6 +15,6 @@ end
 
 
 
-login_twitter.update ('road to influenceur')
+login_twitter.update('road to influenceur')
 
 
